@@ -4,8 +4,7 @@ import './App.css'
 import { Loader } from './components/Loader'
 import WeatherCard from './components/WeatherCard'
 
-
-const API_KEY = "5171eff676fb12590aa638193cad9432"
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 function App() {
   const [coords, setCoords] = useState()
